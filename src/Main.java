@@ -2,6 +2,8 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+UserRegistration userRegistration= new UserRegistration();
 
+        System.out.println("First Name Validation: "+ userRegistration.validateFirstName("Amritanshu"));
     }
 }
