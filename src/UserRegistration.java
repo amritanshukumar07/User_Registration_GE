@@ -19,6 +19,11 @@ public class UserRegistration {
         String emailRegex = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+(\\.[a-zA-Z]{2,})+$";
         return Pattern.matches(emailRegex,email);
     }
+    //Method to validate mpbile number
+    public boolean validateNumber(String mobileNumber){
+        String mobileNumberRegex="^[0-9]{2}[5-9][0-9]{9}$";
+        return Pattern.matches(mobileNumberRegex,mobileNumber);
+    }
 
 
 
