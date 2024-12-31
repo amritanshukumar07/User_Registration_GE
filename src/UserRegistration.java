@@ -14,6 +14,11 @@ public class UserRegistration {
         return Pattern.matches(lastNameRegex,lastName);
 
     }
+    //Method to validate email
+    public boolean validateEmail(String email){
+        String emailRegex = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+(\\.[a-zA-Z]{2,})+$";
+        return Pattern.matches(emailRegex,email);
+    }
 
 
 

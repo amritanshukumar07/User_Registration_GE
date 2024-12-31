@@ -6,5 +6,7 @@ UserRegistration userRegistration= new UserRegistration();
 
         System.out.println("First Name Validation: "+ userRegistration.validateFirstName("Amritanshu"));
         System.out.println("Last Name Validation: "+userRegistration.validateLastName("kumar"));
+        System.out.println("Email Validation: "+ userRegistration.validateEmail("amritanshu4532@gmail.com"));
+
     }
 }
