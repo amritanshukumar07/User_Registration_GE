@@ -5,5 +5,6 @@ public class Main {
 UserRegistration userRegistration= new UserRegistration();
 
         System.out.println("First Name Validation: "+ userRegistration.validateFirstName("Amritanshu"));
+        System.out.println("Last Name Validation: "+userRegistration.validateLastName("kumar"));
     }
 }
