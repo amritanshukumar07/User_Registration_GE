@@ -8,6 +8,12 @@ public class UserRegistration {
         String firstNameRegex= "^[A-Z][a-zA-Z]{2,}$";
         return Pattern.matches(firstNameRegex,firstName);
     }
+    // Method to validate Last name
+    public boolean validateLastName(String lastName){
+        String lastNameRegex= "^[A-Z][a-zA-Z]{2,}$";
+        return Pattern.matches(lastNameRegex,lastName);
+
+    }
 
 
 
