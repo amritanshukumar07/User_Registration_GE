@@ -19,10 +19,16 @@ public class UserRegistration {
         String emailRegex = "^[a-zA-Z0-9]+([._+-][a-zA-Z0-9]+)*@[a-zA-Z0-9]+(\\.[a-zA-Z]{2,})+$";
         return Pattern.matches(emailRegex,email);
     }
-    //Method to validate mpbile number
+    //Method to validate mobile number
     public boolean validateNumber(String mobileNumber){
         String mobileNumberRegex="^[0-9]{2}[5-9][0-9]{9}$";
         return Pattern.matches(mobileNumberRegex,mobileNumber);
+    }
+
+    // Method to validate password
+    public boolean validatePassword(String passWord){
+        String passwordRegex= "^[0-9a-zA-Z`~!@#$%^&*+_=;'./?]{8,}$";
+        return Pattern.matches(passwordRegex,passWord);
     }
 
 
