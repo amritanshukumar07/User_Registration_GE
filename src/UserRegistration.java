@@ -27,7 +27,7 @@ public class UserRegistration {
 
     // Method to validate password
     public boolean validatePassword(String passWord){
-        String passwordRegex= "^(?=.*[A-Z]).+$";
+        String passwordRegex= "^(?=.*[0-9]).+$";
         return Pattern.matches(passwordRegex,passWord);
     }
 
